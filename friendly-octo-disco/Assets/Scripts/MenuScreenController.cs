@@ -40,26 +40,35 @@ public class MenuScreenController : MonoBehaviour
         SceneManager.LoadScene("GameDE");
     }
 
+	//bonus round
     public void StartGameEnd()
     {
         SceneManager.LoadScene("GameEnd");
     }
 
+
+    //going to apron
     public void StartGameApron()
     {
         SceneManager.LoadScene("Apron");
     }
 
+	//go to map screen
     public void Gotothemap()
     {
         SceneManager.LoadScene("MapScreen");
     }
 
+	//go to main menu
     public void Gotomenu()
     {
         SceneManager.LoadScene("GameMenu");
     }
 
-    
+	//go to credits
+    public void Gotocredits()
+	{
+		SceneManager.LoadScene("Credits");
+	}
 }
 
