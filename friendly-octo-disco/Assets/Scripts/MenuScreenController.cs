@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuScreenController : MonoBehaviour
 {
-    //SPACE
+    //Space
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameS");
     }
 
     //BOILING MUD
@@ -19,7 +19,7 @@ public class MenuScreenController : MonoBehaviour
     //ROVER
     public void StartGameR()
     {
-        SceneManager.LoadScene("GameR");
+        SceneManager.LoadScene("Game");
     }
 
     //DEEP SEA
