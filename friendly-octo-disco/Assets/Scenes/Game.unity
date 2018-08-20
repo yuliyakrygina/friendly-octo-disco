@@ -584,6 +584,7 @@ MonoBehaviour:
   answerButtonParent: {fileID: 1854856684}
   questionDisplay: {fileID: 1082841708}
   roundEndDisplay: {fileID: 338778259}
+  highScoreDisplay: {fileID: 0}
 --- !u!1 &528874237
 GameObject:
   m_ObjectHideFlags: 0

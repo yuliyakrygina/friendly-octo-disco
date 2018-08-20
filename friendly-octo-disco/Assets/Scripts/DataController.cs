@@ -7,17 +7,14 @@ using System.IO;
 public class DataController : MonoBehaviour
 {
     public RoundData[] allRoundData;
-   
+
 
 
     // Use this for initialization
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-
-       
-
-        SceneManager.LoadScene("MapScreen");
+		SceneManager.LoadScene("MapScreen");
     }
 
     public RoundData GetCurrentRoundData()
@@ -25,7 +22,6 @@ public class DataController : MonoBehaviour
         return allRoundData[0];
     }
 
- 
 
 }
 

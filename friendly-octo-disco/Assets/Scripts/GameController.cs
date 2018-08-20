@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
-   
+	public Text highScoreDisplay;
 
 
     private DataController dataController;
@@ -118,7 +118,7 @@ public class GameController : MonoBehaviour
     public void EndRound()
     {
         isRoundActive = false;
-
+		
        
 
         questionDisplay.SetActive(false);
