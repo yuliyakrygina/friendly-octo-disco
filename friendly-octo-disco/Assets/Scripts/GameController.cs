@@ -16,10 +16,10 @@ public class GameController : MonoBehaviour
 
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
-	public Text highScoreDisplay;
+	public Text highScoreDisplay; //addition
 
 
-    private DataController dataController;
+    private DataController dataController; //call functions for the data controller
     private RoundData currentRoundData;
     private QuestionData[] questionPool;
     
@@ -118,8 +118,9 @@ public class GameController : MonoBehaviour
     public void EndRound()
     {
         isRoundActive = false;
-		
-       
+
+		dataController.SubmitNewPlayerScore(playerScore);
+		highScoreDisplay.text = dataController.GetHighestPlayerScore().ToString();
 
         questionDisplay.SetActive(false);
         roundEndDisplay.SetActive(true);
