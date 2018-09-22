@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Apron.unity
+    guid: 79ae2ba4a45d21941916f4f849f03581
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 746a51c5398eaa448ac3e7857f287f13
+  - enabled: 1
+    path: Assets/Scenes/GameS.unity
+    guid: 759c265569204c14e81a124221272371
+  - enabled: 1
+    path: Assets/Scenes/MapScreen.unity
+    guid: c85ce2eefa8e56e4982b2ddd6e341f46
+  - enabled: 1
+    path: Assets/Scenes/TutorialScreen.unity
+    guid: 59d6821b7b16fe549b47b3a0236ef5a0
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 88c233f532a48974a91caa5ac4628e30
+  - enabled: 1
+    path: Assets/Scenes/GameBM.unity
+    guid: 2a38b8d3b80745e459e038a9771f142c
+  - enabled: 1
+    path: Assets/Scenes/GameRTR.unity
+    guid: d7400c826b8462a44bd26972b6aef464
+  - enabled: 1
+    path: Assets/Scenes/GameDE.unity
+    guid: 9becc493e2b970948b43ad33c5da8549
+  - enabled: 1
+    path: Assets/Scenes/GameMenu.unity
+    guid: 302ce87904b011e42833dd07a145baa9
+  - enabled: 1
+    path: Assets/Scenes/GameDS.unity
+    guid: 6fb3431c672d40f49ac2040808ba1c17
   m_configObjects: {}

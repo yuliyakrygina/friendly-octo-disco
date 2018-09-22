@@ -119,9 +119,6 @@ public class GameController : MonoBehaviour
     {
         isRoundActive = false;
 
-		dataController.SubmitNewPlayerScore(playerScore);
-		highScoreDisplay.text = dataController.GetHighestPlayerScore().ToString();
-
         questionDisplay.SetActive(false);
         roundEndDisplay.SetActive(true);
     }
