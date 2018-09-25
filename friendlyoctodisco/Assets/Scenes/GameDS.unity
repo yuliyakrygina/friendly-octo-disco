@@ -1087,7 +1087,7 @@ MonoBehaviour:
   allRoundData:
   - name: Deep Sea
     timeLimitInSeconds: 9000
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: At the bottom of the ocean, it is hard to breathe, it's dark,
         cold and there is a lot of pressure.  Pressure is because of the weight of

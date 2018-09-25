@@ -537,7 +537,7 @@ MonoBehaviour:
   allRoundData:
   - name: Mars
     timeLimitInSeconds: 9000
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: Humans learn about other planets by sending robots similar to
         this one to places like Mars which is really cold, has less atmosphere and

@@ -290,7 +290,7 @@ MonoBehaviour:
   allRoundData:
   - name: Desert
     timeLimitInSeconds: 900
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: While the desert is a very harsh environment, one of these statements
         is not true. Can you guess which one is false?

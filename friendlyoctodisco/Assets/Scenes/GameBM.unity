@@ -680,7 +680,7 @@ MonoBehaviour:
   allRoundData:
   - name: Boiling Mud
     timeLimitInSeconds: 9000
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: Look at the information near the container of mud.  Why is boiling
         mud, like in Yellowstone National Park, considered a harsh environment?

@@ -1243,7 +1243,7 @@ MonoBehaviour:
   allRoundData:
   - name: Acid River
     timeLimitInSeconds: 9000
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: "Do you see the container of red fluid? That\u2019s the color
         of the river, RioTinto. It\u2019s red because it is highly acidic. Scientists

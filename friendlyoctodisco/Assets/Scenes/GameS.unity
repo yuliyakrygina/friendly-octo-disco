@@ -1215,7 +1215,7 @@ MonoBehaviour:
   allRoundData:
   - name: Space
     timeLimitInSeconds: 9000
-    pointsAddedForCorrectAnswer: 100
+    pointsAddedForCorrectAnswer: 300
     questions:
     - questionText: "Look for the big orange question mark. Saturn\u2019s moon, Titan,
         has orange smog covering it making the surface hard to see. Besides a rover,
