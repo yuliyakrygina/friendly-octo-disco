@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
     private DataController dataController; //call functions for the data controller
     private RoundData currentRoundData;
     private QuestionData[] questionPool;
-    
+
     private bool isRoundActive;
     private float timeRemaining;
     private int questionIndex;
@@ -76,8 +76,11 @@ public class GameController : MonoBehaviour
     {
         if (isCorrect)
         {
+            Debug.Log("YOU GOT IT RIGHT!");
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
+        } else {
+            Debug.Log("YOU GOT the question wrong :-( !");
         }
 
         if (questionPool.Length > questionIndex + 1)
@@ -94,7 +97,7 @@ public class GameController : MonoBehaviour
 
     private void UpdateTimeRemainingDisplay()
     {
-        timeRemainingDisplayText.text = "Time: " + Mathf.Round(timeRemaining).ToString(); 
+        timeRemainingDisplayText.text = "Time: " + Mathf.Round(timeRemaining).ToString();
     }
 
 
@@ -121,6 +124,33 @@ public class GameController : MonoBehaviour
 
         questionDisplay.SetActive(false);
         roundEndDisplay.SetActive(true);
+
+        // Fiure out button to award
+        ButtonSizes awardedButton = ButtonSizes.None;
+        if(playerScore==0) {
+            Debug.Log("You get the small button");
+            awardedButton = ButtonSizes.Small;
+            // change a varibale in the dataController to keep track of which button
+            // was awarded instead of Debug.Log...
+        } else if(playerScore==300) {
+            awardedButton = ButtonSizes.Medium;
+            Debug.Log("You get the middle button");
+        } else {
+            awardedButton = ButtonSizes.Large;
+            Debug.Log("You get the biggest button");
+        }
+
+        // Assign the awarded button depending upon which area.
+        switch (currentRoundData.name)
+        {
+            case "Space":
+                dataController.spaceButton = awardedButton;
+            break;
+            case "Boiling Mud":
+                dataController.boilingMudButton = awardedButton;
+            break;
+            // @TODO other scenes...
+        }
     }
 
     public void ReturnToMenu()
