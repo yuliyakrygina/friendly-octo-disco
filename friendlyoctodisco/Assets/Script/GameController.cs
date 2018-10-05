@@ -76,11 +76,8 @@ public class GameController : MonoBehaviour
     {
         if (isCorrect)
         {
-            Debug.Log("YOU GOT IT RIGHT!");
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
-        } else {
-            Debug.Log("YOU GOT the question wrong :-( !");
         }
 
         if (questionPool.Length > questionIndex + 1)
@@ -129,27 +126,13 @@ public class GameController : MonoBehaviour
         ButtonSizes awardedButton = ButtonSizes.None;
         if(playerScore==0) {
             Debug.Log("You get the small button");
-            awardedButton = ButtonSizes.Small;
-            // change a varibale in the dataController to keep track of which button
-            // was awarded instead of Debug.Log...
+            // Hide medium and big button
         } else if(playerScore==300) {
-            awardedButton = ButtonSizes.Medium;
             Debug.Log("You get the middle button");
+            // Hide small and big button
         } else {
-            awardedButton = ButtonSizes.Large;
             Debug.Log("You get the biggest button");
-        }
-
-        // Assign the awarded button depending upon which area.
-        switch (currentRoundData.name)
-        {
-            case "Space":
-                dataController.spaceButton = awardedButton;
-            break;
-            case "Boiling Mud":
-                dataController.boilingMudButton = awardedButton;
-            break;
-            // @TODO other scenes...
+            // Hide small and medium button
         }
     }
 
