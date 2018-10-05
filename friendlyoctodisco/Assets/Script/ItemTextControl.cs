@@ -16,9 +16,9 @@ public class ItemTextControl : MonoBehaviour {
             {
                 popuptext.GetComponent<TextMesh>().text = " Text "; // \n line break
             }
-            textstatus = "on";
-            Instantiate(popuptext, new Vector3(transform.position.x, transform.position.y+2,0), popuptext.rotation); //position of popup text +2 bumps up
 
+            textstatus = "on";
+            Instantiate(popuptext, new Vector3(transform.position.x-2, transform.position.y-2,0), popuptext.rotation); //position of popup text -2,-2 from gem
         }
     }
 
