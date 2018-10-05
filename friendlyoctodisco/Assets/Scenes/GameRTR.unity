@@ -1340,6 +1340,12 @@ MonoBehaviour:
         isCorrect: 0
       - answerText: Hydrogen peroxide
         isCorrect: 0
+  spaceButton: 0
+  boilingMudButton: 0
+  marsButton: 0
+  deepSeaButton: 0
+  acidRiverButton: 0
+  desertButton: 0
 --- !u!114 &1927697217
 MonoBehaviour:
   m_ObjectHideFlags: 0

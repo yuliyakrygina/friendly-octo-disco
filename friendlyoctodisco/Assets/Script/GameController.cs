@@ -7,12 +7,15 @@ using System.Collections.Generic;
 public class GameController : MonoBehaviour
 {
 
-
+    // add
     public Text questionDisplayText;
     public Text scoreDisplayText;
     public Text timeRemainingDisplayText;
     public SimpleObjectPool answerButtonObjectPool;
     public Transform answerButtonParent;
+    public GameObject smallButton; //addition
+    public GameObject mediumButton; //addition
+    public GameObject largeButton; //addition
 
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
@@ -123,15 +126,26 @@ public class GameController : MonoBehaviour
         roundEndDisplay.SetActive(true);
 
         // Fiure out button to award
-        ButtonSizes awardedButton = ButtonSizes.None;
+       
         if(playerScore==0) {
             Debug.Log("You get the small button");
-            // Hide medium and big button
+            // Hide medium and big button, 
+            smallButton.SetActive(true);
+            mediumButton.SetActive(false);
+            largeButton.SetActive(false);
+            
+             
         } else if(playerScore==300) {
             Debug.Log("You get the middle button");
+            smallButton.SetActive(false);
+            mediumButton.SetActive(true);
+            largeButton.SetActive(false);
             // Hide small and big button
         } else {
             Debug.Log("You get the biggest button");
+            smallButton.SetActive(false);
+            mediumButton.SetActive(false);
+            largeButton.SetActive(true);
             // Hide small and medium button
         }
     }
