@@ -9,6 +9,7 @@ public class AnswerButton : MonoBehaviour
 
     private AnswerData answerData;
     private GameController gameController;
+    private int playerscore;
 
     // Use this for initialization
     void Start()
@@ -27,5 +28,8 @@ public class AnswerButton : MonoBehaviour
     {
         gameController.AnswerButtonClicked(answerData.isCorrect);
     }
+
+   
+
 }
 
