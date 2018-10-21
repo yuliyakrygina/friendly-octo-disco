@@ -264,8 +264,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012821087}
-        m_MethodName: GoToTutorial
+      - m_Target: {fileID: 914465780}
+        m_MethodName: gototutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1004,7 +1004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7353438, y: 0.74125004}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.2000008, y: -1.0999985}
+  m_AnchoredPosition: {x: 1.2000122, y: -1.0999908}
   m_SizeDelta: {x: -2.5, y: 2.1999998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437580643
@@ -1234,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75653124, y: 0}
   m_AnchorMax: {x: 1, y: 0.2}
-  m_AnchoredPosition: {x: 6.05, y: 0}
+  m_AnchoredPosition: {x: 6.049988, y: 0}
   m_SizeDelta: {x: 12.099976, y: -39.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908492386

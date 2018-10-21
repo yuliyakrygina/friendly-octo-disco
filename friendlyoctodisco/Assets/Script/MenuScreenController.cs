@@ -70,5 +70,12 @@ public class MenuScreenController : MonoBehaviour
 	{
 		SceneManager.LoadScene("Credits");
 	}
+
+    //go to tutorial
+    public void gototutorial()
+    {
+        SceneManager.LoadScene("TutorialScreen");
+    }
+   
 }
 
