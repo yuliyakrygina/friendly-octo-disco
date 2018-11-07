@@ -1,2 +1,2 @@
 # friendly-octo-disco
-trivia game app for the new york hall of science
+NYSCI adventure game for the New York Hall of Science made by Sam and Yuliya in accosiation with Killer Snails and The New York Hall of Science
