@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
+[System.Serializable]
+
 public class GameController : MonoBehaviour
 {
 
@@ -13,9 +15,12 @@ public class GameController : MonoBehaviour
     public Text timeRemainingDisplayText;
     public SimpleObjectPool answerButtonObjectPool;
     public Transform answerButtonParent;
+
+
     public GameObject smallButton; //addition
     public GameObject mediumButton; //addition
     public GameObject largeButton; //addition
+  
 
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
@@ -31,8 +36,11 @@ public class GameController : MonoBehaviour
     private int questionIndex;
     private int playerScore;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
+    private Button theButton;
+    private ColorBlock theColor;
 
     // Use this for initialization
+
     void Start()
     {
         dataController = FindObjectOfType<DataController>();
@@ -46,6 +54,9 @@ public class GameController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
+
+        theButton = GetComponent<Button>();
+        theColor = GetComponent<Button>().colors;
 
     }
 
@@ -79,8 +90,17 @@ public class GameController : MonoBehaviour
     {
         if (isCorrect)
         {
+            ///third method
+            // incorperating the "isCorrect" option with also displaying a green color over the correct answer when pressed.
+            var colors = GetComponent<Button>().colors;
+            colors.normalColor = Color.green;
+            GetComponent<Button>().colors = colors;
+            ///
+
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
+           
+
         }
 
         if (questionPool.Length > questionIndex + 1)
@@ -95,6 +115,37 @@ public class GameController : MonoBehaviour
 
     }
 
+    /*
+
+    //setting the function for green buttons.
+    //There would be an option on the game controller in the inspector to choose which answer will have a green color when pressed.
+    // similar mechanic to "isCorrect" option on the gamecontroller inspector in the scene. 
+
+    public void ColorofButton(bool isGreen)
+    {
+        /// first method
+        if (isGreen)
+        {
+            GetComponent<Image>().color = Color.green;
+
+        }
+        //
+        
+
+        //Second Method
+        if (isGreen)
+        {
+
+            var colors = GetComponent<Button>().colors;
+            colors.normalColor = Color.green;
+            GetComponent<Button>().colors = colors;
+        }
+
+    }
+    ////////////
+
+    */ 
+
     private void UpdateTimeRemainingDisplay()
     {
         timeRemainingDisplayText.text = "Time: " + Mathf.Round(timeRemaining).ToString();
@@ -102,7 +153,7 @@ public class GameController : MonoBehaviour
 
 
 
-    // Update is called once per frame
+  
     void Update()
     {
         if (isRoundActive)

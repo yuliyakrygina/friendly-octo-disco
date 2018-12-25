@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+[System.Serializable]
+
 
 public class AnswerButton : MonoBehaviour
 {
-    
+   
+
     public Text answerText;
 
     private AnswerData answerData;
     private GameController gameController;
-    private int playerscore;
+   
 
-    // Use this for initialization
     void Start()
     {
+
         gameController = FindObjectOfType<GameController>();
     }
 
@@ -27,9 +30,22 @@ public class AnswerButton : MonoBehaviour
     public void HandleClick()
     {
         gameController.AnswerButtonClicked(answerData.isCorrect);
+        
     }
 
-   
+    //incorperated with first and second method to putting in green, lines 117-144 on GameController Script.
+    //setting color active 
+    /*
+ 
+    public void ColorofButtonActivate()
+    {
+        gameController.ColorofButton(answerData.isGreen);
+      
+    }
+    */
+
+
+
 
 }
 
