@@ -41,6 +41,14 @@ public class GameController : MonoBehaviour
 
     // Use this for initialization
 
+
+
+    private void Awake()
+    {
+        theButton = GetComponent<Button>();
+        theColor = GetComponent<Button>().colors;
+    }
+
     void Start()
     {
         dataController = FindObjectOfType<DataController>();
@@ -54,9 +62,6 @@ public class GameController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
-
-        theButton = GetComponent<Button>();
-        theColor = GetComponent<Button>().colors;
 
     }
 
@@ -95,6 +100,7 @@ public class GameController : MonoBehaviour
             var colors = GetComponent<Button>().colors;
             colors.normalColor = Color.green;
             GetComponent<Button>().colors = colors;
+            print("Cliked");
             ///
 
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
