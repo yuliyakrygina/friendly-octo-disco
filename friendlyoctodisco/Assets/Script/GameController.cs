@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour
     private int questionIndex;
     private int playerScore;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
+
     private Button theButton;
     private ColorBlock theColor;
 
@@ -43,11 +44,7 @@ public class GameController : MonoBehaviour
 
 
 
-    private void Awake()
-    {
-        theButton = GetComponent<Button>();
-        theColor = GetComponent<Button>().colors;
-    }
+  
 
     void Start()
     {
@@ -62,6 +59,9 @@ public class GameController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
+
+        theButton = GetComponent<Button>();
+        theColor = GetComponent<Button>().colors;
 
     }
 
@@ -95,17 +95,17 @@ public class GameController : MonoBehaviour
     {
         if (isCorrect)
         {
-            ///third method
-            // incorperating the "isCorrect" option with also displaying a green color over the correct answer when pressed.
-            var colors = GetComponent<Button>().colors;
-            colors.normalColor = Color.green;
-            GetComponent<Button>().colors = colors;
-            print("Cliked");
-            ///
 
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
-           
+
+            //theColor.normalColor = Color.green;
+            theColor.highlightedColor = Color.green;
+            //theColor.pressedColor = Color.green;
+            theButton.colors = theColor;
+
+            print("Clicked");
+
 
         }
 
@@ -120,6 +120,31 @@ public class GameController : MonoBehaviour
         }
 
     }
+
+
+    /*
+    public void ColorOfButton(bool isGreen, bool isRed)
+    {
+        if (isGreen)
+        {
+            //theColor.normalColor = Color.green;
+            theColor.highlightedColor = Color.green;
+            //theColor.pressedColor = Color.green;
+            theButton.colors = theColor;
+
+            print("Clicked");
+        }
+
+        if (isRed)
+        {
+            theColor.highlightedColor = Color.red;
+            theButton.colors = theColor;
+
+            print("Clicked");
+        }
+
+    }
+    */
 
     /*
 
@@ -150,7 +175,7 @@ public class GameController : MonoBehaviour
     }
     ////////////
 
-    */ 
+    */
 
     private void UpdateTimeRemainingDisplay()
     {

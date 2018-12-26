@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 [System.Serializable]
 
 
 public class AnswerButton : MonoBehaviour
 {
-   
 
     public Text answerText;
 
     private AnswerData answerData;
     private GameController gameController;
-   
+
 
     void Start()
     {
@@ -33,14 +34,10 @@ public class AnswerButton : MonoBehaviour
         
     }
 
-    //incorperated with first and second method to putting in green, lines 117-144 on GameController Script.
-    //setting color active 
     /*
- 
-    public void ColorofButtonActivate()
+    public void ButtonTransitionColor()
     {
-        gameController.ColorofButton(answerData.isGreen);
-      
+        gameController.ColorOfButton(answerData.isGreen, answerData.isRed);
     }
     */
 
