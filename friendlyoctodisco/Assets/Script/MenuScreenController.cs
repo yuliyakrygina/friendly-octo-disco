@@ -76,6 +76,15 @@ public class MenuScreenController : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialScreen");
     }
-   
+
+    //go to map
+
+    public void GoToMap()
+    {
+        SceneManager.LoadScene("MapScreen");
+    }
+
+
+
 }
 

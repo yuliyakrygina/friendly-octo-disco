@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
 
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
-	public Text highScoreDisplay; //addition
+	
 
 
     private DataController dataController; //call functions for the data controller
@@ -91,21 +91,30 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void AnswerButtonClicked(bool isCorrect)
+    public void AnswerButtonClicked(bool isCorrect, bool isGreen)
     {
         if (isCorrect)
         {
 
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
+        }
 
-            //theColor.normalColor = Color.green;
-            theColor.highlightedColor = Color.green;
-            //theColor.pressedColor = Color.green;
-            theButton.colors = theColor;
+        if (isGreen)
+        {
+            if (playerScore == 300) {
+                theColor.normalColor = Color.green;
+                theColor.highlightedColor = Color.green;
+                theColor.pressedColor = Color.green;
+                theButton.colors = theColor;
 
-            print("Clicked");
-
+                print("Clicked");
+                Debug.Log("Green - Right");
+            }
+            else
+            {
+                Debug.Log("Red - Wrong");
+            }
 
         }
 
@@ -122,7 +131,7 @@ public class GameController : MonoBehaviour
     }
 
 
-    /*
+   /* 
     public void ColorOfButton(bool isGreen, bool isRed)
     {
         if (isGreen)
@@ -232,10 +241,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("MapScreen");
-    }
+ 
 
 
 

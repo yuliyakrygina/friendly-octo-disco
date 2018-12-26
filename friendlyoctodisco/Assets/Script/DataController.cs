@@ -7,7 +7,7 @@ using System.IO;
 public class DataController : MonoBehaviour
 {
     public RoundData[] allRoundData;
-	private PlayerProgress playerProgress;
+
 
 	void Start()
     {

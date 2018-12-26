@@ -10,6 +10,7 @@ public class AnswerButton : MonoBehaviour
 {
 
     public Text answerText;
+    //public bool isGreen;
 
     private AnswerData answerData;
     private GameController gameController;
@@ -30,7 +31,7 @@ public class AnswerButton : MonoBehaviour
 
     public void HandleClick()
     {
-        gameController.AnswerButtonClicked(answerData.isCorrect);
+        gameController.AnswerButtonClicked(answerData.isCorrect, answerData.isGreen);
         
     }
 
