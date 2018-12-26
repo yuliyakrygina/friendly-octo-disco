@@ -10,7 +10,6 @@ public class AnswerButton : MonoBehaviour
 {
 
     public Text answerText;
-    //public bool isGreen;
 
     private AnswerData answerData;
     private GameController gameController;
@@ -35,12 +34,12 @@ public class AnswerButton : MonoBehaviour
         
     }
 
-    /*
+    //Color Change with answers
     public void ButtonTransitionColor()
     {
         gameController.ColorOfButton(answerData.isGreen, answerData.isRed);
     }
-    */
+    
 
 
 

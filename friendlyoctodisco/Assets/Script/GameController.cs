@@ -61,7 +61,8 @@ public class GameController : MonoBehaviour
         isRoundActive = true;
 
         theButton = GetComponent<Button>();
-        theColor = GetComponent<Button>().colors;
+        theColor = GetComponent<Button>().colors; //error: NullReferenceException: Object reference not set to an instance of an object
+                                                  //GameController.Start()(at Assets / Script / GameController.cs:64)
 
     }
 
@@ -106,7 +107,8 @@ public class GameController : MonoBehaviour
                 theColor.normalColor = Color.green;
                 theColor.highlightedColor = Color.green;
                 theColor.pressedColor = Color.green;
-                theButton.colors = theColor;
+                theButton.colors = theColor; //error : NullReferenceException: Object reference not set to an instance of an object
+                                             //GameController.Start()(at Assets / Script / GameController.cs:64)
 
                 print("Clicked");
                 Debug.Log("Green - Right");
@@ -131,7 +133,8 @@ public class GameController : MonoBehaviour
     }
 
 
-   /* 
+   //TRYING TO CHANGE COLOR, SIMILAR METHOD TO "ISCORRECT" in GameController in inspector. Choosing which will show up as 
+   //green or red when clicked. 
     public void ColorOfButton(bool isGreen, bool isRed)
     {
         if (isGreen)
@@ -153,38 +156,7 @@ public class GameController : MonoBehaviour
         }
 
     }
-    */
-
-    /*
-
-    //setting the function for green buttons.
-    //There would be an option on the game controller in the inspector to choose which answer will have a green color when pressed.
-    // similar mechanic to "isCorrect" option on the gamecontroller inspector in the scene. 
-
-    public void ColorofButton(bool isGreen)
-    {
-        /// first method
-        if (isGreen)
-        {
-            GetComponent<Image>().color = Color.green;
-
-        }
-        //
-        
-
-        //Second Method
-        if (isGreen)
-        {
-
-            var colors = GetComponent<Button>().colors;
-            colors.normalColor = Color.green;
-            GetComponent<Button>().colors = colors;
-        }
-
-    }
-    ////////////
-
-    */
+    
 
     private void UpdateTimeRemainingDisplay()
     {

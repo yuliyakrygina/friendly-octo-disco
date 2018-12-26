@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 
 public class ButtonColor : MonoBehaviour
+    /*
+     * 
+     * 
+     * This script attempted to change the color of the button depending on score.
+     * Each question is 300 points, so if 300 points is rewarded, there will be a green button.
+     * Else, there would be a red button. 
+
+
+
+*/
+
 {/*
     private AnswerData answerData;
     //private GameController gameController;
