@@ -20,6 +20,9 @@ public class GameController : MonoBehaviour
     public GameObject smallButton; //addition
     public GameObject mediumButton; //addition
     public GameObject largeButton; //addition
+    public GameObject zerocorrect;
+    public GameObject onecorrect;
+    public GameObject twocorrect;
   
 
     public GameObject questionDisplay;
@@ -108,14 +111,24 @@ public class GameController : MonoBehaviour
         if (playerScore == 0)
         {
             Debug.Log("Zero Answer Correct");
+            zerocorrect.SetActive(true);
+            onecorrect.SetActive(false);
+            twocorrect.SetActive(false);
+
         }
         else if (playerScore == 300)
         {
             Debug.Log("One Answer Correct");
+            zerocorrect.SetActive(false);
+            onecorrect.SetActive(true);
+            twocorrect.SetActive(false);
         }
         else
         {
             Debug.Log("Both Answers Correct!");
+            zerocorrect.SetActive(false);
+            onecorrect.SetActive(false);
+            twocorrect.SetActive(true);
         }
 
 
@@ -185,6 +198,22 @@ public class GameController : MonoBehaviour
             largeButton.SetActive(true);
             // Hide small and medium button
         }
+
+        if (playerScore == 0)
+        {
+            Debug.Log("Try again!");
+        }
+        else if (playerScore == 300)
+        {
+            Debug.Log("You have one correct answer");
+        }
+        else
+        {
+            Debug.Log("You answered everything correct!");
+        }
+
+
+
     }
 
  
