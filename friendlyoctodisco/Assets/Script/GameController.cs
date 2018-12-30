@@ -198,7 +198,8 @@ public class GameController : MonoBehaviour
             largeButton.SetActive(true);
             // Hide small and medium button
         }
-
+        ////////////
+       
         if (playerScore == 0)
         {
             Debug.Log("Try again!");
