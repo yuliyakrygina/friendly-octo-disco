@@ -870,40 +870,40 @@ MonoBehaviour:
       answers:
       - answerText: "There isn\u2019t that much water"
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
       - answerText: "It\u2019s super hot"
         isCorrect: 1
-        isRed: 0
         isGreen: 1
+        isRed: 0
       - answerText: A lack of oxygen makes it hard to breathe
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
       - answerText: It smells really bad
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
     - questionText: "Microbes sometimes release odors. Smell that stink? That\u2019s
         microbial poop that means there\u2019s something alive. What do microbes eat
         here to make that smelly poop?"
       answers:
       - answerText: It eats hydrogen sulfite
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
       - answerText: It eats sulfide
         isCorrect: 1
-        isRed: 0
         isGreen: 1
+        isRed: 0
       - answerText: It eats nothing
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
       - answerText: It eats poop
         isCorrect: 0
-        isRed: 1
         isGreen: 0
+        isRed: 1
 --- !u!114 &1197739739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,7 +926,6 @@ MonoBehaviour:
   largeButton: {fileID: 1149368801}
   questionDisplay: {fileID: 829954657}
   roundEndDisplay: {fileID: 105873784}
-  highScoreDisplay: {fileID: 0}
 --- !u!4 &1197739740
 Transform:
   m_ObjectHideFlags: 0
@@ -1536,8 +1535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.71000004}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -22.5}
-  m_SizeDelta: {x: -400.4, y: -45.1}
+  m_AnchoredPosition: {x: 0, y: -32.1}
+  m_SizeDelta: {x: -400.4, y: -64.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1896124383
 MonoBehaviour:

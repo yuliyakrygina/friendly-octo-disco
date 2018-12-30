@@ -741,7 +741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.6937501}
   m_AnchorMax: {x: 0.98431253, y: 0.93500006}
-  m_AnchoredPosition: {x: 10.039978, y: -0.024986}
+  m_AnchoredPosition: {x: 10.039978, y: -0.024993896}
   m_SizeDelta: {x: -318.1, y: 0.050018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1141998886
@@ -771,7 +771,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -995,8 +995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.25865626, y: 1}
-  m_AnchoredPosition: {x: 1.5, y: -17.1}
-  m_SizeDelta: {x: -36, y: -54.2}
+  m_AnchoredPosition: {x: 1.46, y: -17.1}
+  m_SizeDelta: {x: -36.08, y: -44.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1345864550
 MonoBehaviour:
@@ -1613,39 +1613,23 @@ MonoBehaviour:
       answers:
       - answerText: Send people there, who cares!
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
       - answerText: Satellites
         isCorrect: 1
-        isGreen: 0
-        isRed: 0
       - answerText: Flying cars
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
       - answerText: Send flying squirrels
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
     - questionText: When looking for life at places like Titan, what is the first
         thing we look for?
       answers:
       - answerText: Water
         isCorrect: 1
-        isGreen: 0
-        isRed: 0
       - answerText: The Amount of air
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
       - answerText: Plants
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
       - answerText: Animals
         isCorrect: 0
-        isGreen: 0
-        isRed: 0
 --- !u!114 &2058936917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +1652,6 @@ MonoBehaviour:
   largeButton: {fileID: 1244311027}
   questionDisplay: {fileID: 1365872966}
   roundEndDisplay: {fileID: 1911914089}
-  highScoreDisplay: {fileID: 0}
 --- !u!4 &2058936918
 Transform:
   m_ObjectHideFlags: 0

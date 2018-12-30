@@ -37,8 +37,8 @@ public class GameController : MonoBehaviour
     private int playerScore;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
 
-    private Button theButton;
-    private ColorBlock theColor;
+    //private Button theButton;
+    //private ColorBlock theColor;
 
     // Use this for initialization
 
@@ -59,11 +59,10 @@ public class GameController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
-
-        theButton = GetComponent<Button>();
-        theColor = GetComponent<Button>().colors; //error: NullReferenceException: Object reference not set to an instance of an object
-                                                  //GameController.Start()(at Assets / Script / GameController.cs:64)
-
+        /*
+        //theButton = GetComponent<Button>();
+        
+        */
     }
 
     private void ShowQuestion()
@@ -92,33 +91,33 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void AnswerButtonClicked(bool isCorrect, bool isGreen)
+    public void AnswerButtonClicked(bool isCorrect)
     {
+
+
         if (isCorrect)
         {
-
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
         }
 
-        if (isGreen)
+        /*
+         * Displaying how much questions you answered right during the round. 
+        */
+
+        if (playerScore == 0)
         {
-            if (playerScore == 300) {
-                theColor.normalColor = Color.green;
-                theColor.highlightedColor = Color.green;
-                theColor.pressedColor = Color.green;
-                theButton.colors = theColor; //error : NullReferenceException: Object reference not set to an instance of an object
-                                             //GameController.Start()(at Assets / Script / GameController.cs:64)
-
-                print("Clicked");
-                Debug.Log("Green - Right");
-            }
-            else
-            {
-                Debug.Log("Red - Wrong");
-            }
-
+            Debug.Log("Zero Answer Correct");
         }
+        else if (playerScore == 300)
+        {
+            Debug.Log("One Answer Correct");
+        }
+        else
+        {
+            Debug.Log("Both Answers Correct!");
+        }
+
 
         if (questionPool.Length > questionIndex + 1)
         {
@@ -132,31 +131,6 @@ public class GameController : MonoBehaviour
 
     }
 
-
-   //TRYING TO CHANGE COLOR, SIMILAR METHOD TO "ISCORRECT" in GameController in inspector. Choosing which will show up as 
-   //green or red when clicked. 
-    public void ColorOfButton(bool isGreen, bool isRed)
-    {
-        if (isGreen)
-        {
-            //theColor.normalColor = Color.green;
-            theColor.highlightedColor = Color.green;
-            //theColor.pressedColor = Color.green;
-            theButton.colors = theColor;
-
-            print("Clicked");
-        }
-
-        if (isRed)
-        {
-            theColor.highlightedColor = Color.red;
-            theButton.colors = theColor;
-
-            print("Clicked");
-        }
-
-    }
-    
 
     private void UpdateTimeRemainingDisplay()
     {

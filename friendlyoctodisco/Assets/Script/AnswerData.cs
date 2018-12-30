@@ -6,8 +6,8 @@ public class AnswerData
 {
     public string answerText;
     public bool isCorrect;
-    public bool isGreen;
-    public bool isRed;
+    //public bool isGreen;
+    //public bool isRed;
    
 }
 

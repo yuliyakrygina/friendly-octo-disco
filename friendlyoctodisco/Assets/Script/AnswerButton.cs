@@ -30,16 +30,18 @@ public class AnswerButton : MonoBehaviour
 
     public void HandleClick()
     {
-        gameController.AnswerButtonClicked(answerData.isCorrect, answerData.isGreen);
+
+        gameController.AnswerButtonClicked(answerData.isCorrect);
         
     }
 
+    /*
     //Color Change with answers
     public void ButtonTransitionColor()
     {
         gameController.ColorOfButton(answerData.isGreen, answerData.isRed);
     }
-    
+    */
 
 
 
