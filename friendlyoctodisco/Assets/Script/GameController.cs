@@ -23,6 +23,10 @@ public class GameController : MonoBehaviour
     public GameObject zerocorrect;
     public GameObject onecorrect;
     public GameObject twocorrect;
+
+    public GameObject zeroC;
+    public GameObject oneC;
+    public GameObject twoC;
   
 
     public GameObject questionDisplay;
@@ -62,6 +66,8 @@ public class GameController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
+
+        
         /*
         //theButton = GetComponent<Button>();
         
@@ -179,41 +185,49 @@ public class GameController : MonoBehaviour
        
         if(playerScore==0) {
             Debug.Log("You get the small button");
+            Debug.Log("Try again!");
             // Hide medium and big button, 
             smallButton.SetActive(true);
             mediumButton.SetActive(false);
             largeButton.SetActive(false);
-            
-             
+
+            zeroC.SetActive(true);
+            oneC.SetActive(false);
+            twoC.SetActive(false);
+
+
+
         } else if(playerScore==300) {
             Debug.Log("You get the middle button");
+            Debug.Log("You have one correct answer");
+
             smallButton.SetActive(false);
             mediumButton.SetActive(true);
             largeButton.SetActive(false);
             // Hide small and big button
+
+
+            zeroC.SetActive(false);
+            oneC.SetActive(true);
+            twoC.SetActive(false);
+
+
+
         } else {
             Debug.Log("You get the biggest button");
+            Debug.Log("You answered everything correct!");
+
             smallButton.SetActive(false);
             mediumButton.SetActive(false);
             largeButton.SetActive(true);
             // Hide small and medium button
+
+            zeroC.SetActive(false);
+            oneC.SetActive(false);
+            twoC.SetActive(true);
         }
-        ////////////
        
-        if (playerScore == 0)
-        {
-            Debug.Log("Try again!");
-        }
-        else if (playerScore == 300)
-        {
-            Debug.Log("You have one correct answer");
-        }
-        else
-        {
-            Debug.Log("You answered everything correct!");
-        }
-
-
+      
 
     }
 
