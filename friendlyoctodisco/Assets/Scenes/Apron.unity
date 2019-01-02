@@ -235,10 +235,10 @@ RectTransform:
   m_Father: {fileID: 1717729809}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541.38, y: 249.3}
-  m_SizeDelta: {x: 197.25, y: 221.3}
+  m_AnchorMin: {x: 0, y: 0.68600005}
+  m_AnchorMax: {x: 0.15218753, y: 1}
+  m_AnchoredPosition: {x: 1.1199951, y: 2.300003}
+  m_SizeDelta: {x: 2.25, y: -4.699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487921608
 MonoBehaviour:
@@ -309,10 +309,10 @@ RectTransform:
   m_Father: {fileID: 1717729809}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103, y: -273}
-  m_SizeDelta: {x: 467.1, y: 143.5}
+  m_AnchorMin: {x: 0.23115626, y: 0}
+  m_AnchorMax: {x: 0.6008436, y: 0.21533336}
+  m_AnchoredPosition: {x: 4.5, y: 9.5}
+  m_SizeDelta: {x: -5.899994, y: -11.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564187891
 MonoBehaviour:
@@ -654,7 +654,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.11764706, g: 0.72156864, b: 0.8, a: 1}
+    m_NormalColor: {r: 0.11764706, g: 0.72156864, b: 0.8, a: 0.40392157}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -892,10 +892,10 @@ RectTransform:
   m_Father: {fileID: 1717729809}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.38, y: 263.3}
-  m_SizeDelta: {x: 197.25, y: 193.3}
+  m_AnchorMin: {x: 0.8453126, y: 0.7318334}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.11999512, y: -0.2000122}
+  m_SizeDelta: {x: -1.75, y: 0.30000305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996311956
 MonoBehaviour:
@@ -968,7 +968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.21533336}
   m_AnchorMax: {x: 1, y: 0.87200004}
-  m_AnchoredPosition: {x: -0.000022888, y: -1.5}
+  m_AnchoredPosition: {x: 0, y: -1.5}
   m_SizeDelta: {x: -394.5, y: -64.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1999218546
@@ -1007,8 +1007,8 @@ MonoBehaviour:
   m_Text: 'Thank you for playing NYSCI Adventures!
 
 
-    This game was made possible by the Designers in Residence Program and the Killer
-    Snails Team.'
+    This game was made possible by the NYSCI Designers in Residence Program and the
+    Killer Snails Team.'
 --- !u!222 &1999218547
 CanvasRenderer:
   m_ObjectHideFlags: 0

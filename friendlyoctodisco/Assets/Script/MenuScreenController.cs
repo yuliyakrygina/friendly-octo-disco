@@ -50,7 +50,7 @@ public class MenuScreenController : MonoBehaviour
     //going to apron
     public void StartGameApron()
     {
-        SceneManager.LoadScene("Apron");
+        SceneManager.LoadScene("EndGame");
     }
 
 	//go to map screen
