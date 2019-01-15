@@ -43,12 +43,12 @@ public class MenuScreenController : MonoBehaviour
 	//bonus round
     public void StartGameEnd()
     {
-        SceneManager.LoadScene("GameEnd");
+        SceneManager.LoadScene("LastScene");
     }
 
 
     //going to apron
-    public void StartGameApron()
+    public void EndofGame()
     {
         SceneManager.LoadScene("EndGame");
     }

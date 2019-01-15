@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Scenes/GameRTR.unity
     guid: d7400c826b8462a44bd26972b6aef464
   - enabled: 1
+    path: Assets/Scenes/LastScene.unity
+    guid: 0af0d412bf7b15b4da3aad9c545a14c8
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 7ef7c792c63c18144aa2767b4562c1a0
+  - enabled: 1
     path: Assets/Scenes/GameDE.unity
     guid: 9becc493e2b970948b43ad33c5da8549
   - enabled: 1
